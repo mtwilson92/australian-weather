@@ -17,6 +17,8 @@ df %>%
   ggplot(aes(x = Temp9am, y = Humidity9am, color = "red")) + 
   geom_point() +
   labs(title = paste("Temperature vs Humidity for", city)) +
+  ylab("Humidity") +
+  xlab("Temperature") +
   theme_minimal()
 
 # Save the plot in graphics/
